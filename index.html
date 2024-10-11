@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Batalha Naval</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Batalha Naval</h1>
+
+  <!-- Placar abaixo do título -->
+  <div class="score-container">
+    <div class="score-box">
+      <h3>Você</h3>
+      <span id="player-score">0</span>
+    </div>
+    <div class="score-box">
+      <h3>Oponente</h3>
+      <span id="opponent-score">0</span>
+    </div>
+  </div>
+
+  <div class="game-container">
+    <div class="boards-and-ships">
+      <!-- Área do jogador com tabuleiro e embarcações restantes ao lado -->
+      <div class="player-area">
+        <!-- Embarcações restantes do jogador ao lado do tabuleiro -->
+        <div class="ships-remaining small-text">
+          <h3>Embarcações Restantes - Você</h3>
+          <ul id="player-ships-remaining">
+            <!-- Lista das embarcações do jogador -->
+          </ul>
+        </div>
+        <!-- Tabuleiro do jogador -->
+        <div class="board" id="player-board"></div>
+      </div>
+
+      <!-- Área do oponente com tabuleiro e embarcações restantes ao lado -->
+      <div class="opponent-area">
+        <!-- Tabuleiro do oponente -->
+        <div class="board" id="opponent-board"></div>
+        <!-- Embarcações restantes do oponente ao lado do tabuleiro -->
+        <div class="ships-remaining small-text">
+          <h3>Embarcações Restantes - Oponente</h3>
+          <ul id="opponent-ships-remaining">
+            <!-- Lista das embarcações do oponente -->
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Histórico da partida abaixo dos tabuleiros -->
+    <h3>Histórico da partida</h3>
+    <div id="action-log" class="action-log"></div>
+
+    <!-- Botões centralizados abaixo do histórico -->
+    <div class="controls">
+      <button id="rotate-ship">Girar Embarcação</button>
+      <button id="start-game" disabled>Iniciar Jogo</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
